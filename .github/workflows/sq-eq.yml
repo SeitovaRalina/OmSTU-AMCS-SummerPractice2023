@@ -25,3 +25,8 @@ jobs:
       - name: Test
         run: ./SquareEquationTest ./SquareEquationLib/bin/Debug/net7.0/SquareEquationLib.dll
         
+      - name: Build2
+        run: build XUnit.Coverage.sln
+
+      - name: XUnitTest
+        run: dotnet test /p:CollectCoverage=true
