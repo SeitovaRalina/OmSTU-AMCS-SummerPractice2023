@@ -3,12 +3,12 @@
 namespace SquareEquationLib;
 
 public class SquareEquation
-{ 
+{
     public static bool HasNotValue(double value)
     {
         return Double.IsNaN(value) || Double.IsInfinity(value);
     }
-    public static double[] Solve(double a, double b, double c)
+    public double[] Solve(double a, double b, double c)
     {
         double[] solution;
         double eps = 1e-9;
@@ -35,8 +35,10 @@ public class SquareEquation
     }
     public bool IsPrime(int candidate)
     {
-        throw new NotImplementedException("Not implemented.");
+        if (candidate < 2)
+        {
+            return false;
+        }
+        throw new NotImplementedException("Not implemdcwcsvceveaented.");
     }
 }
-
-// В новой ветке создайте проект с тестами xUnit, добавьте в него зависимость SquareEquationLib
