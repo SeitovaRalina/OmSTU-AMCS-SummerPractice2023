@@ -27,7 +27,6 @@ jobs:
 
       - name: Build2
         run: build XUnit.Coverage.sln
-        
+
       - name: XUnitTest
         run: dotnet test /p:CollectCoverage=true
-        
