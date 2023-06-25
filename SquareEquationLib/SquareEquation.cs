@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SquareEquationLib;
+﻿namespace SquareEquationLib;
 
 public class SquareEquation
 {
@@ -32,13 +30,5 @@ public class SquareEquation
             solution[1] = c / solution[0];
         }
         return solution;
-    }
-    public bool IsPrime(int candidate)
-    {
-        if (candidate < 2)
-        {
-            return false;
-        }
-        throw new NotImplementedException("Not implemdcwcsvceveaented.");
     }
 }

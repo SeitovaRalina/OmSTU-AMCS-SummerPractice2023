@@ -1,0 +1,187 @@
+{
+  "SquareEquationLib.dll": {
+    "/home/ubuntu/OmSTU-AMCS-SummerPractice2023-1/SquareEquationLib/SquareEquation.cs": {
+      "SquareEquationLib.SquareEquation": {
+        "System.Boolean SquareEquationLib.SquareEquation::HasNotValue(System.Double)": {
+          "Lines": {
+            "6": 15,
+            "7": 15,
+            "8": 15
+          },
+          "Branches": [
+            {
+              "Line": 7,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 13
+            },
+            {
+              "Line": 7,
+              "Offset": 7,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Double[] SquareEquationLib.SquareEquation::Solve(System.Double,System.Double,System.Double)": {
+          "Lines": {
+            "10": 7,
+            "12": 7,
+            "13": 7,
+            "14": 4,
+            "15": 4,
+            "17": 6,
+            "18": 3,
+            "20": 6,
+            "21": 2,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 3,
+            "33": 3
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 13,
+              "Offset": 13,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 13,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 6
+            },
+            {
+              "Line": 13,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 5
+            },
+            {
+              "Line": 13,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 4
+            },
+            {
+              "Line": 13,
+              "Offset": 18,
+              "EndOffset": 44,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 13,
+              "Offset": 26,
+              "EndOffset": 44,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 3
+            },
+            {
+              "Line": 13,
+              "Offset": 34,
+              "EndOffset": 44,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 3
+            },
+            {
+              "Line": 13,
+              "Offset": 47,
+              "EndOffset": 49,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 4
+            },
+            {
+              "Line": 13,
+              "Offset": 47,
+              "EndOffset": 56,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 3
+            },
+            {
+              "Line": 20,
+              "Offset": 91,
+              "EndOffset": 93,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 1
+            },
+            {
+              "Line": 20,
+              "Offset": 91,
+              "EndOffset": 104,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 2
+            },
+            {
+              "Line": 21,
+              "Offset": 106,
+              "EndOffset": 108,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 106,
+              "EndOffset": 115,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 120,
+              "EndOffset": 122,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 120,
+              "EndOffset": 148,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}
