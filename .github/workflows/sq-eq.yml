@@ -2,12 +2,12 @@ name: xUnit test
 
 on:
   push:
-    branches: ["square_equation"]
+    branches: ["test"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v3
 
