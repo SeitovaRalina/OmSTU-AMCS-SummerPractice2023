@@ -6,7 +6,7 @@ public class SquareEquation
     {
         return Double.IsNaN(value) || Double.IsInfinity(value);
     }
-    public double[] Solve(double a, double b, double c)
+    public static double[] Solve(double a, double b, double c)
     {
         double[] solution;
         double eps = 1e-9;

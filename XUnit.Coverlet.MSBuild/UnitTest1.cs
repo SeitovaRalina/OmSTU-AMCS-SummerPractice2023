@@ -5,8 +5,8 @@ namespace XUnit.Coverlet
 {
     public class CheckQuality
     {
-        readonly SquareEquationLib.SquareEquation _checkQuality;
-        public CheckQuality() => _checkQuality = new SquareEquationLib.SquareEquation();
+        /*readonly SquareEquationLib.SquareEquation _checkQuality;
+        public CheckQuality() => _checkQuality = new SquareEquationLib.SquareEquation();*/
 
         [Theory]
         [InlineData(1, -4, 4)] //1 корень
@@ -22,7 +22,7 @@ namespace XUnit.Coverlet
             bool equation = true;
             try
             {
-                double[] result = _checkQuality.Solve(a, b, c);
+                double[] result = SquareEquationLib.SquareEquation.Solve(a, b, c);
                 if (result.Length == 1)
                 {
                     equation = Math.Abs(a * result[0] * result[0] + b * result[0] + c) < eps;
