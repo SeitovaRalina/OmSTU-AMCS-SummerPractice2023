@@ -5,9 +5,6 @@ namespace XUnit.Coverlet
 {
     public class CheckQuality
     {
-        /*readonly SquareEquationLib.SquareEquation _checkQuality;
-        public CheckQuality() => _checkQuality = new SquareEquationLib.SquareEquation();*/
-
         [Theory]
         [InlineData(1, -4, 4)] //1 корень
         [InlineData(1, 3, -4)] //2 корня
@@ -27,7 +24,7 @@ namespace XUnit.Coverlet
                 {
                     equation = Math.Abs(a * result[0] * result[0] + b * result[0] + c) < eps;
                 }
-                else if (result.Length > 1)
+                else if (result.Length == 2)
                 {
                     equation = (Math.Abs(a * result[0] * result[0] + b * result[0] + c) < eps) && (Math.Abs(a * result[1] * result[1] + b * result[1] + c) < eps);
                 }
