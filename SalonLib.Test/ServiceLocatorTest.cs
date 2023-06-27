@@ -18,6 +18,7 @@ public class ServiceLocatorTest
         Assert.Equal(expected, actual);
     }
     
+    [Fact]
     public void Service3Test()
     {
         var expected = "В кабинете";
