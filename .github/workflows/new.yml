@@ -1,0 +1,26 @@
+name: BDD test
+
+on:
+  push:
+    branches: ["bdd"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 7.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore SquareEquationLib
+
+      - name: BuildBDDTest
+        run: dotnet build XUnit.Coverage.sln
+        
+      - name: BDDtest
+        run: dotnet test /p:CollectCoverage=true
