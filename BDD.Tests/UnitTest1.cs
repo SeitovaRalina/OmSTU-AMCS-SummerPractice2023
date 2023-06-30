@@ -90,23 +90,19 @@ namespace UnitTes1
             catch {}
         }
         [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
-        public void TwoRoots(double koef1, double koef2)
+        public void TwoRoots(double p0, double p1)
         {
             double[] result = SquareEquation.Solve(a,b,c);
-
-            double eps = 1e-9;
-            bool equation = (Math.Abs(a * result[0] * result[0] + b * result[0] + c) < eps) && (Math.Abs(a * result[1] * result[1] + b * result[1] + c) < eps);
-            Assert.True(equation, $"Корни найдены неправильно");
+            double[] expected = {p0, p1};
+            Assert.Equal(result, expected);
         }
 
         [Then(@"квадратное уравнение имеет один корень (.*) кратности два")]
-         public void OneRoot(double koef1)
+         public void OneRoot(double p0)
          {
             double[] result = SquareEquation.Solve(a,b,c);
-
-            double eps = 1e-9;
-            bool equation = Math.Abs(a * result[0] * result[0] + b * result[0] + c) < eps;
-            Assert.True(equation, $"Корни найдены неправильно");
+            double[] expected = {p0};
+            Assert.Equal(result, expected);
          }
 
          [Then(@"множество корней квадратного уравнения пустое")]
