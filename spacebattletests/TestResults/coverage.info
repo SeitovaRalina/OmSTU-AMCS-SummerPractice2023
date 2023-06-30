@@ -1,0 +1,22 @@
+SF:/home/ubuntu/OmSTU-AMCS-SummerPractice2023-1/spacebattle/spacebattle.cs
+FN:4,System.Double[] spacebattle.SpaceBattle::Uniform_motion(System.Double[],System.Double[],System.Boolean)
+FNDA:4,System.Double[] spacebattle.SpaceBattle::Uniform_motion(System.Double[],System.Double[],System.Boolean)
+DA:5,4
+DA:6,4
+DA:8,4
+DA:9,3
+DA:10,3
+DA:11,1
+DA:12,1
+DA:13,2
+DA:14,1
+DA:15,1
+BRDA:8,11,0,3
+BRDA:8,11,1,1
+LF:10
+LH:10
+BRF:2
+BRH:2
+FNF:1
+FNH:1
+end_of_record

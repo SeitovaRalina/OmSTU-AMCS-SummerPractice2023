@@ -1,0 +1,26 @@
+name: spacebattle_conflict
+
+on:
+  push:
+    branches: ["space_battle"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET7
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 7.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore spacebattle
+
+      - name: Test Build
+        run: dotnet build spacebattle --no-restore /p:ContinuousIntegrationBuild=true
+
+      - name: DBB test
+        run: cd spacebattletests && dotnet test /p:CollectCoverage=true
