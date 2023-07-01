@@ -5,7 +5,8 @@ public class SpaceShip
     public double[] Point {set {point = value;}}
 
     // ПОЛЕ SPEED И СВОЙСТВО ДЛЯ НЕГО НЕ НУЖНЫ, Т.К. В КЛАССЕ ХАРАКТЕРИЗУЕТСЯ 
-    // ТОЛЬКО СОСТОЯНИЕ КОРАБЛЯ НА ДАННЫЙ МОМЕНТ, А НЕ ДВИЖЕНИЕ 
+    // ТОЛЬКО СОСТОЯНИЕ КОРАБЛЯ НА ДАННЫЙ МОМЕНТ, его положение и возможность дальнейшего движения, а не само движение
+    // как я понимаю, для характеризации движения нужен отдельный класс, но пока ограничимся одним ...
     bool change_position = true;
     public bool Change_position {set {change_position = value;}}
     double fuel = double.NaN;
