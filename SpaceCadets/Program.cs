@@ -44,7 +44,7 @@ namespace SpaceCadets1
             return new JObject(
                 new JProperty("Response",
                     new JArray(data.GroupBy(x => x.discipline).Select(g =>
-                    new JObject(new JProperty($"{g.Key}", Math.Round(g.Average(x => x.mark), 2) ))))));
+                    new JObject(new JProperty($"{g.Key}", Convert.ToDouble(g.Sum(s => s.mark)/g.Count()) ))))));
         }
         static JObject GetBestGroupsByDiscipline(List<Student> data)
         {
@@ -53,12 +53,12 @@ namespace SpaceCadets1
                             {
                                 Discipline = g.Key.discipline,
                                 Group = g.Key.group,
-                                GPA = g.Average(s => s.mark)
+                                GPA = Math.Truncate(100 * g.Average(s => s.mark)) / 100
                             }).GroupBy(x => x.Discipline)
                             .Select(e => new
                             {
                                 Discipline = e.Key,
-                                GPA = Math.Round(e.Max(t => t.GPA), 2),
+                                GPA = e.Max(t => t.GPA),
                                 Group = e.Where(r => r.GPA == e.Max(t => t.GPA)).Select(x => x.Group)
                             });
             return new JObject(
