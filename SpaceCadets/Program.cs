@@ -67,7 +67,7 @@ namespace SpaceCadets1
                         (c, emp) => new JObject(new JProperty("Discipline", c.Discipline),
                                                 new JProperty("Group", emp),
                                                 new JProperty("GPA", c.GPA))))));
-        }
+        } 
         static void Main(string[] args)
         {
             string inputFilePath = args[0]; 
