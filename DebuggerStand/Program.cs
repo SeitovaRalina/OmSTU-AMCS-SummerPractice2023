@@ -32,7 +32,7 @@ namespace SelectSort
             Console.WriteLine("\r\nОтсортированный массив:");
             foreach (int value in intArray)
             {
-                Console.Write($"{value} ");
+                Console.Write($"{value} "); 
             }
         }
     }
