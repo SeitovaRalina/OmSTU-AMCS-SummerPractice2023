@@ -48,4 +48,13 @@ public class SpaceShip
         else {throw new Exception();}
         return angle;        
     }
+
+    public void ReturnToBasicSettings()
+    {
+        point = new double[]{double.NaN, double.NaN};
+        change_position = true;
+        fuel = Double.NaN;
+        angle = Double.NaN;
+        change_angle = true;
+    }
 }
