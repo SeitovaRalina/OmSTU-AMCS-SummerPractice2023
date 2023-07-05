@@ -1,0 +1,122 @@
+{
+  "spacebattle.dll": {
+    "/home/ubuntu/OmSTU-AMCS-SummerPractice2023-1/spacebattle/spacebattle.cs": {
+      "spacebattle.SpaceBattle": {
+        "System.Void spacebattle.SpaceBattle::set_Point(System.Double[])": {
+          "Lines": {
+            "5": 9
+          },
+          "Branches": []
+        },
+        "System.Void spacebattle.SpaceBattle::set_Speed(System.Double[])": {
+          "Lines": {
+            "7": 9
+          },
+          "Branches": []
+        },
+        "System.Void spacebattle.SpaceBattle::set_Change_position(System.Boolean)": {
+          "Lines": {
+            "9": 3
+          },
+          "Branches": []
+        },
+        "System.Boolean spacebattle.SpaceBattle::HasNormalValue(System.Double[])": {
+          "Lines": {
+            "11": 7,
+            "12": 7,
+            "13": 7
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            },
+            {
+              "Line": 12,
+              "Offset": 9,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Double[] spacebattle.SpaceBattle::Uniform_motion()": {
+          "Lines": {
+            "15": 4,
+            "16": 4,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 6,
+            "22": 1,
+            "23": 1
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 16,
+              "Offset": 27,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 16,
+              "Offset": 13,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 16,
+              "Offset": 27,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 16,
+              "Offset": 40,
+              "EndOffset": 42,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 16,
+              "Offset": 40,
+              "EndOffset": 96,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 3
+            }
+          ]
+        },
+        "System.Void spacebattle.SpaceBattle::.ctor()": {
+          "Lines": {
+            "4": 4,
+            "6": 4,
+            "8": 4
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
