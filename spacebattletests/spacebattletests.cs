@@ -9,9 +9,8 @@ namespace spacebattletests
     public class РеализоватьПрямолинейноеДвижение
     {
         public readonly ScenarioContext _scensrioContext;
-        Exception exp = new Exception();
         SpaceBattle spaceship = new SpaceBattle();
-        double[] result = new double[2];
+        Func<double[]> result;        
         public РеализоватьПрямолинейноеДвижение(ScenarioContext scensrioContext)
         {
             _scensrioContext = scensrioContext;
@@ -52,21 +51,21 @@ namespace spacebattletests
         {
             try
             {
-                result = spaceship.Uniform_motion();
+                result = () => spaceship.Uniform_motion();
             }
-            catch (Exception e) { exp =  e;}
+            catch { }
         }
 
         [Then(@"космический корабль перемещается в точку пространства с координатами \((.*), (.*)\)")]
-        public void ThenКосмическийКорабльПеремещаетсяВТочкуПространстваСКоординатами(int p0, int p1)
+        public void ThenКосмическийКорабльПеремещаетсяВТочкуПространстваСКоординатами(double p0, double p1)
         {
-            Assert.True((result[0] == p0) && (result[1] == p1));
+            Assert.Equal(result(), new double[2]{p0, p1});
         }
 
         [Then(@"возникает ошибка Exception")]
         public void ThenВозникаетОшибкаException()
         {
-            Assert.ThrowsAsync<Exception>(() => throw exp);
+            Assert.Throws<Exception>(() => result());
         }
     }
 }
