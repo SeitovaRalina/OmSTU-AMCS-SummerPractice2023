@@ -1,0 +1,212 @@
+{
+  "spacebattle.dll": {
+    "/home/ubuntu/OmSTU-AMCS-SummerPractice2023-1/spacebattle/spacebattle.cs": {
+      "spacebattle.SpaceShip": {
+        "System.Void spacebattle.SpaceShip::set_Point(System.Double[])": {
+          "Lines": {
+            "5": 12
+          },
+          "Branches": []
+        },
+        "System.Void spacebattle.SpaceShip::set_Change_position(System.Boolean)": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.Void spacebattle.SpaceShip::set_Volume_of_fuel(System.Double)": {
+          "Lines": {
+            "13": 6
+          },
+          "Branches": []
+        },
+        "System.Void spacebattle.SpaceShip::set_Angle_of_inclination(System.Double)": {
+          "Lines": {
+            "15": 12
+          },
+          "Branches": []
+        },
+        "System.Void spacebattle.SpaceShip::set_Change_angle(System.Boolean)": {
+          "Lines": {
+            "17": 3
+          },
+          "Branches": []
+        },
+        "System.Boolean spacebattle.SpaceShip::HasNormalValue(System.Double[])": {
+          "Lines": {
+            "19": 22,
+            "20": 22,
+            "21": 22
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 11
+            },
+            {
+              "Line": 20,
+              "Offset": 9,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 11
+            }
+          ]
+        },
+        "System.Double[] spacebattle.SpaceShip::Find_point(System.Double[])": {
+          "Lines": {
+            "23": 13,
+            "24": 13,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 24,
+            "30": 1,
+            "31": 1
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            },
+            {
+              "Line": 24,
+              "Offset": 22,
+              "EndOffset": 24,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 3
+            },
+            {
+              "Line": 24,
+              "Offset": 13,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 10
+            },
+            {
+              "Line": 24,
+              "Offset": 22,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 10
+            },
+            {
+              "Line": 24,
+              "Offset": 35,
+              "EndOffset": 37,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 35,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 12
+            }
+          ]
+        },
+        "System.Double spacebattle.SpaceShip::Find_fuel(System.Double)": {
+          "Lines": {
+            "33": 5,
+            "34": 5,
+            "35": 2,
+            "36": 2,
+            "37": 2,
+            "38": 6,
+            "39": 2,
+            "40": 2
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 27,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 34,
+              "Offset": 27,
+              "EndOffset": 47,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            }
+          ]
+        },
+        "System.Double spacebattle.SpaceShip::Find_angle(System.Double)": {
+          "Lines": {
+            "42": 4,
+            "43": 4,
+            "44": 2,
+            "45": 2,
+            "47": 2,
+            "48": 4,
+            "49": 2,
+            "50": 2
+          },
+          "Branches": [
+            {
+              "Line": 43,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 43,
+              "Offset": 26,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 43,
+              "Offset": 39,
+              "EndOffset": 41,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 43,
+              "Offset": 39,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void spacebattle.SpaceShip::.ctor()": {
+          "Lines": {
+            "4": 10,
+            "10": 10,
+            "12": 10,
+            "14": 10,
+            "16": 10
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
