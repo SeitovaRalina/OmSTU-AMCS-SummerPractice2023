@@ -9,7 +9,7 @@ public class SquareEquation
     public static double[] Solve(double a, double b, double c)
     {
         double[] solution;
-        double eps = 1e-9;
+        double eps = 1e-6;
         if ((a < eps && a > -eps)||HasNotValue(a)||HasNotValue(b)||HasNotValue(c))
         {
             throw new System.ArgumentException();

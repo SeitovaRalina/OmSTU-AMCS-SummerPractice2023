@@ -7,6 +7,10 @@ namespace UnitTes1
     {
         ScenarioContext scenarioContext;
         double a, b, c;
+        delegate double[] Equation(double a, double b, double c);
+        Equation solve = (double a, double b, double c) => SquareEquation.Solve(a,b,c);
+        
+        double[] result;
         public BDD(ScenarioContext input)
         {
             scenarioContext = input;
@@ -86,21 +90,21 @@ namespace UnitTes1
         public void TryToSolve()
         {
             try
-            {var result = SquareEquation.Solve(a,b,c);}
+            { result = solve(a, b, c);}
             catch {}
         }
         [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
         public void TwoRoots(double p0, double p1)
         {
-            double[] result = SquareEquation.Solve(a,b,c);
             double[] expected = {p0, p1};
+            Array.Sort(result);
+            Array.Sort(expected);
             Assert.Equal(result, expected);
         }
 
         [Then(@"квадратное уравнение имеет один корень (.*) кратности два")]
          public void OneRoot(double p0)
          {
-            double[] result = SquareEquation.Solve(a,b,c);
             double[] expected = {p0};
             Assert.Equal(result, expected);
          }
@@ -108,23 +112,13 @@ namespace UnitTes1
          [Then(@"множество корней квадратного уравнения пустое")]
          public void NoRoots()
          {
-            double[] result = SquareEquation.Solve(a,b,c);
             Assert.Empty(result);
          }
 
          [Then(@"выбрасывается исключение ArgumentException")]
          public void Exception()
          {
-            var argumentException= new ArgumentException();
-
-            try
-            {
-                var result = SquareEquation.Solve(a,b,c);
-            }
-            catch (Exception ex)
-            {
-                Assert.Equal(ex.GetType(), argumentException.GetType());
-            }
+            Assert.Throws<System.ArgumentException>(() => solve(a, b, c));
          }
     }
 }
