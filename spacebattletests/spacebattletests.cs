@@ -62,14 +62,13 @@ namespace spacebattletests
             {
                 result1 = spaceship.Find_point(speed);
             }
-            catch (Exception e) 
+            catch
             { 
                 try
                 {
                     result2 = spaceship.Find_fuel(delta_fuel);
                 }
                 catch {}
-                exp =  e;
             }
         }
 
@@ -82,7 +81,19 @@ namespace spacebattletests
         [Then(@"возникает ошибка Exception")]
         public void ThenВозникаетОшибкаException()
         {
-            Assert.ThrowsAsync<Exception>(() => throw exp);
+            if(speed != new double[] {double.NaN, double.NaN})
+            {
+                Assert.Throws<Exception>(() => spaceship.Find_point(speed));                
+            }
+            else if(delta_angle!=double.NaN)
+            {
+                Assert.Throws<Exception>(() => spaceship.Find_angle(delta_angle));
+            }
+            else
+            {
+                Assert.Throws<Exception>(() => spaceship.Find_fuel(delta_fuel));
+
+            }
         }
 
         // exercise 7
@@ -138,10 +149,7 @@ namespace spacebattletests
             {
                 result2 = spaceship.Find_angle(delta_angle);
             }
-            catch (Exception e)
-            {
-                exp = e;
-            }
+            catch { };
         }
 
         [Then(@"новый объем топлива космического корабля равен (.*) ед")]
